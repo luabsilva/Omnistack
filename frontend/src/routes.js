@@ -5,14 +5,14 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import New from './pages/New';
 
-export default function Routes(){
+export default function Routes() {
     return (
         <BrowserRouter>
-            <Switch>
-                <Route parh="/" exact component={Login} />
-                <Route parh="/dashboard" component={Dashboard} />
-                <Route parh="/new" component={New} />
-            </Switch>
-        </BrowserRouter>
-    );
+        <Switch>
+           <Route path="/" exact component={Login} />
+           <Route path="/dashboard" component={Dashboard} />
+           <Route path="/new" component={New} />
+        </Switch>
+        </BrowserRouter>        
+    )
 }

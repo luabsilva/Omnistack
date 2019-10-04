@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import api from '../../services/api';
 
 export default function Login({ history }){
@@ -9,7 +9,7 @@ export default function Login({ history }){
         const response = await api.post('/sessions', {email});
         const {_id} = response.data;
         localStorage.setItem('user', _id);
-        history.push('/dashboard');
+        history.push('/dashboard');   
     }
 
     return (
